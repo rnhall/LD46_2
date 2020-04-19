@@ -8,7 +8,7 @@ public class GrowBigger : MonoBehaviour
     public float timeT = 0;
     bool recentlyFed = false;
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggernEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Food")
         {
