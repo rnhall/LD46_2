@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
-public class PoliceAI : MonoBehaviour
+public class DoctorAI : MonoBehaviour
 {
-    public GameObject player;
-    public PlayerController playerController;
+
+    public List<GameObject> customers;
 
     public NavMeshAgent agent;
     public ThirdPersonCharacter character;
@@ -19,11 +19,11 @@ public class PoliceAI : MonoBehaviour
     public int roamTimerConst = 100;
     public int roamTimer;
 
+    public bool healing;
+    public Vector3 healingTarget;
+    public GameObject customerToHeal;
+    public bool atDestination;
     public bool attacked;
-
-    public bool alerted;
-    public int alertTimer;
-    public int alertMax = 1000;
 
     public AudioSource audioSource;
     public AudioClip sirenClip;
@@ -34,8 +34,6 @@ public class PoliceAI : MonoBehaviour
         roamTimer = 0;
         SetKinematic(true);
         agent.updateRotation = false;
-        alerted = false;
-        alertTimer = alertMax;
     }
 
     // Update is called once per frame
@@ -57,41 +55,40 @@ public class PoliceAI : MonoBehaviour
         {
             if (agent.remainingDistance > agent.stoppingDistance)
             {
+                atDestination = false;
                 character.Move(agent.desiredVelocity, false, false);
             }
             else
             {
+                atDestination = true;
                 character.Move(Vector3.zero, false, false);
             }
         }
 
-        //Handles the alerted status if an officer sees you dragging a body.
-        if ((PlayerInSight() && playerController.isDragging) || PlayerInSight() && playerController.attacked)
+        customerToHeal = RagdollsInSight();
+
+        if (customerToHeal != null)
         {
-            agent.SetDestination(player.transform.position);
-            agent.speed = 4.0f;
-            character.Move(agent.desiredVelocity, false, false);
-            if (alerted == false)
+            healingTarget = customerToHeal.transform.position;
+            if (healing == false)
             {
-                audioSource.clip = sirenClip;
-                audioSource.Play();
+                agent.SetDestination(healingTarget);
+                agent.speed = 2.0f;
             }
-            alerted = true;
-        } else
+            healing = true;
+            roaming = false;
+
+            if (atDestination)
+            {
+                HealCustomer(customerToHeal);
+                customerToHeal = null;
+                healing = false;
+                roaming = true;
+            }
+        }
+        else
         {
             agent.speed = 1.25f;
-        }
-
-        if (alerted && alertTimer > 0)
-        {
-            agent.SetDestination(player.transform.position);
-            audioSource.volume = (float)alertTimer / alertMax;
-            alertTimer -= 1;
-        } else
-        {
-            audioSource.Stop();
-            alerted = false;
-            alertTimer = alertMax;
         }
 
         //Handles being attacked
@@ -127,28 +124,34 @@ public class PoliceAI : MonoBehaviour
         return finalPosition;
     }
 
-    public bool PlayerInSight()
+    public GameObject RagdollsInSight()
     {
-        RaycastHit hit;
-        if (Physics.Linecast(this.transform.position, player.transform.position, out hit))
+        foreach(GameObject customer in customers)
         {
-            float angle = Vector3.Dot(agent.transform.forward, agent.transform.position - player.transform.position);
-            if (hit.collider.gameObject.layer != 9 && angle < 0)
+            RaycastHit hit;
+            if (Physics.Linecast(this.transform.position, customer.transform.position, out hit))
             {
-                Debug.DrawLine(agent.transform.position, player.transform.position, Color.black);
-                return true;
+                float angle = Vector3.Dot(agent.transform.forward, agent.transform.position - customer.transform.position);
+                if (hit.collider.gameObject.layer != 9 && angle < 0 && customer.GetComponent<CustomerAI>().isRagdoll)
+                {
+                    Debug.DrawLine(agent.transform.position, customer.transform.position, Color.red);
+                    return customer;
+                }
             }
         }
-        return false;
+        return null;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void HealCustomer(GameObject customer)
     {
-        if (collision.gameObject.tag == "Player" && alerted)
-        {
-            //TO IMPLEMENT//
-            Debug.Log("You were arrested!");
-        }
+
+        Debug.Log("In the name of Jesus be healed!");
+        customers.Remove(customer);
+
+        //customers.Add(Instantiate(customer, customer.transform.position, customer.transform.rotation));
+
+        Destroy(customer);
+        
     }
 }
 
