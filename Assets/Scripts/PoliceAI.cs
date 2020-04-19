@@ -41,7 +41,7 @@ public class PoliceAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //Manages idle roaming state.
+
         if (roaming && agent.enabled)
         {
             if (roamTimer <= 0)
@@ -111,6 +111,10 @@ public class PoliceAI : MonoBehaviour
         foreach (Rigidbody rb in bodies)
         {
             rb.isKinematic = newValue;
+            //rb.velocity = Vector3.zero;
+            //rb.angularVelocity = Vector3.zero;
+            //rb.drag = 1;
+            //rb.angularDrag = 1;
         }
     }
 
@@ -141,17 +145,7 @@ public class PoliceAI : MonoBehaviour
         }
         return false;
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player" && alerted)
-        {
-            //TO IMPLEMENT//
-            Debug.Log("You were arrested!");
-        }
-    }
 }
-
 
 
 
