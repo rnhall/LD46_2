@@ -10,10 +10,21 @@ public class GrowBigger : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
+        Debug.Log(collider.gameObject);
         if (collider.gameObject.tag == "Food")
         {
             recentlyFed = true;
             Destroy(collider.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //Debug.Log(collision.gameObject);
+        if (collision.gameObject.tag == "Food")
+        {
+            recentlyFed = true;
+            Destroy(collision.gameObject);
         }
     }
 
