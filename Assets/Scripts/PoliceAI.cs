@@ -7,6 +7,7 @@ using UnityStandardAssets.Characters.ThirdPerson;
 public class PoliceAI : MonoBehaviour
 {
     public GameObject player;
+    public PlayerController playerController;
 
     public NavMeshAgent agent;
     public ThirdPersonCharacter character;
@@ -18,12 +19,23 @@ public class PoliceAI : MonoBehaviour
     public int roamTimerConst = 100;
     public int roamTimer;
 
+    public bool attacked;
+
+    public bool alerted;
+    public int alertTimer;
+    public int alertMax = 1000;
+
+    public AudioSource audioSource;
+    public AudioClip sirenClip;
+
     // Start is called before the first frame update
     void Start()
     {
         roamTimer = 0;
         SetKinematic(true);
         agent.updateRotation = false;
+        alerted = false;
+        alertTimer = alertMax;
     }
 
     // Update is called once per frame
@@ -53,9 +65,40 @@ public class PoliceAI : MonoBehaviour
             }
         }
 
-        if (PlayerInSight())
+        //Handles the alerted status if an officer sees you dragging a body.
+        if ((PlayerInSight() && playerController.isDragging) || PlayerInSight() && playerController.attacked)
         {
-            Debug.Log("Spotted!");
+            agent.SetDestination(player.transform.position);
+            agent.speed = 4.0f;
+            character.Move(agent.desiredVelocity, false, false);
+            if (alerted == false)
+            {
+                audioSource.clip = sirenClip;
+                audioSource.Play();
+            }
+            alerted = true;
+        } else
+        {
+            agent.speed = 1.25f;
+        }
+
+        if (alerted && alertTimer > 0)
+        {
+            agent.SetDestination(player.transform.position);
+            audioSource.volume = (float)alertTimer / alertMax;
+            alertTimer -= 1;
+        } else
+        {
+            audioSource.Stop();
+            alerted = false;
+            alertTimer = alertMax;
+        }
+
+        //Handles being attacked
+        if (attacked)
+        {
+            //TO IMPLEMENT//
+            Debug.Log("GAME OVER!");
         }
     }
 
