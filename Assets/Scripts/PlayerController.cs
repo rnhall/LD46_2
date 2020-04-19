@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Animator animator;
+    public Animation animation;
+    public Camera camera;
+
+    public float attackRange;
 
     // Start is called before the first frame update
     void Start()
@@ -16,13 +19,27 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
-            animator.SetBool("swing", true);
-        } else
-        {
-            animator.SetBool("swing", false);
+            Attack();
         }
         
+    }
+
+    public void Attack()
+    {
+        animation.Play();
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, attackRange))
+        {
+            if (hit.collider.tag == "Food")
+            {
+                GameObject hitObj = hit.transform.gameObject;
+                hitObj.GetComponent<CustomerAI>().MakeRagdoll();
+            }
+        }
+
     }
 }
