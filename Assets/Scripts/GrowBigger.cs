@@ -13,11 +13,7 @@ public class GrowBigger : MonoBehaviour
         if (collider.gameObject.tag == "Food")
         {
             recentlyFed = true;
-<<<<<<< HEAD
-            Destroy(collider.gameObject);
-=======
             Destroy(collider.transform.root.gameObject);
->>>>>>> 773dc30934a0b803de60dbf1d125b4f229b69434
         }
     }
 
