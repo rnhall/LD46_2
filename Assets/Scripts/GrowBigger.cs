@@ -8,23 +8,12 @@ public class GrowBigger : MonoBehaviour
     public float timeT = 0;
     bool recentlyFed = false;
 
-    void OnTriggernEnter(Collider collider)
+    void OnTriggerEnter(Collider collider)
     {
-        Debug.Log(collider.gameObject);
         if (collider.gameObject.tag == "Food")
         {
             recentlyFed = true;
             Destroy(collider.gameObject);
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        //Debug.Log(collision.gameObject);
-        if (collision.gameObject.tag == "Food")
-        {
-            recentlyFed = true;
-            Destroy(collision.gameObject);
         }
     }
 
