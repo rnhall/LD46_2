@@ -907,7 +907,10 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 49ecfac... Working on doctor AI
 =======
 >>>>>>> parent of 49ecfac... Working on doctor AI
 =======
@@ -6502,6 +6505,7 @@ PrefabInstance:
     m_RemovedComponents: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 282d3e12c9c429b44a4d4971b70d04d3, type: 3}
 --- !u!4 &458933919 stripped
 Transform:
@@ -6511,6 +6515,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &462735818
 =======
+=======
+>>>>>>> parent of 49ecfac... Working on doctor AI
 =======
 >>>>>>> parent of 49ecfac... Working on doctor AI
   m_SourcePrefab: {fileID: 100100000, guid: f370b1c728a35694481a4dc123a02306, type: 3}
@@ -6596,12 +6602,15 @@ Transform:
   m_PrefabInstance: {fileID: 462735818}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &464089705
 =======
   m_CorrespondingSourceObject: {fileID: 4345199469445452, guid: 968af719e82784949bdac8e0ad5bfca6,
     type: 3}
   m_PrefabInstance: {fileID: 523548726}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 49ecfac... Working on doctor AI
 =======
 >>>>>>> parent of 49ecfac... Working on doctor AI
 --- !u!1001 &533721319
@@ -7517,6 +7526,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 986165650}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &616475202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+    type: 3}
+  m_PrefabInstance: {fileID: 986165650}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &616475203
 >>>>>>> parent of 49ecfac... Working on doctor AI
 MonoBehaviour:
@@ -7526,7 +7541,11 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 555984784}
+=======
+  m_GameObject: {fileID: 616475202}
+>>>>>>> parent of 49ecfac... Working on doctor AI
 =======
   m_GameObject: {fileID: 616475202}
 >>>>>>> parent of 49ecfac... Working on doctor AI
@@ -7549,9 +7568,12 @@ GameObject:
   m_PrefabInstance: {fileID: 986165650}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!144 &556884774
 CharacterJoint:
 =======
+=======
+>>>>>>> parent of 49ecfac... Working on doctor AI
   m_GameObject: {fileID: 616475202}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -7569,12 +7591,16 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 556884772}
   m_ConnectedBody: {fileID: 1121529565}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.3627016, y: 0.0000002658926, z: -0.00000012293457}
+=======
+  m_GameObject: {fileID: 616475202}
+>>>>>>> parent of 49ecfac... Working on doctor AI
 =======
   m_GameObject: {fileID: 616475202}
 >>>>>>> parent of 49ecfac... Working on doctor AI
@@ -9955,9 +9981,96 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4345199469445452, guid: 968af719e82784949bdac8e0ad5bfca6,
     type: 3}
+<<<<<<< HEAD
   m_PrefabInstance: {fileID: 668734856}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &671225002
+=======
+  m_PrefabInstance: {fileID: 759019505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &772793696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3375823862495835305, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+    type: 3}
+  m_PrefabInstance: {fileID: 986165650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!144 &772793698
+CharacterJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772793696}
+  m_ConnectedBody: {fileID: 362059582}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.24493945, y: -0.0000001108274, z: 0.00000034377447}
+  serializedVersion: 2
+  m_SwingAxis: {x: 0, y: -1, z: 0}
+  m_TwistLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowTwistLimit:
+    limit: -90
+    bounciness: 0
+    contactDistance: 0
+  m_HighTwistLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_SwingLimitSpring:
+    spring: 0
+    damper: 0
+  m_Swing1Limit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_Swing2Limit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_EnableProjection: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 0
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!54 &772793699
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772793696}
+  serializedVersion: 2
+  m_Mass: 1.25
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &772793700
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772793696}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.077267185
+  m_Height: 0.3863359
+  m_Direction: 0
+  m_Center: {x: -0.19316795, y: 0, z: 0}
+--- !u!1001 &775520657
+>>>>>>> parent of 49ecfac... Working on doctor AI
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11859,6 +11972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 5160f0d6447a35d4894dd91c07411d37, type: 3}
 --- !u!4 &804790032 stripped
 Transform:
@@ -11868,6 +11982,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &815176727
 =======
+=======
+>>>>>>> parent of 49ecfac... Working on doctor AI
   m_SourcePrefab: {fileID: 100100000, guid: f370b1c728a35694481a4dc123a02306, type: 3}
 --- !u!1001 &910403429
 >>>>>>> parent of 49ecfac... Working on doctor AI
@@ -12936,9 +13052,102 @@ Transform:
   m_PrefabInstance: {fileID: 856514567}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &856889507
 =======
 --- !u!1001 &986165650
+=======
+--- !u!1001 &986165650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1734136641}
+    m_Modifications:
+    - target: {fileID: -6057140222963153312, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0992014
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.20493232
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.645765
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+        type: 3}
+      propertyPath: m_Name
+      value: Doctor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f9730d2ac4963d45ba0099b4a9ffdef, type: 3}
+--- !u!1001 &987342594
+>>>>>>> parent of 49ecfac... Working on doctor AI
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -15176,6 +15385,59 @@ CharacterJoint:
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.00000035762798, y: -0.000000029802322, z: -0.096088365}
+<<<<<<< HEAD
+>>>>>>> parent of 49ecfac... Working on doctor AI
+=======
+  serializedVersion: 2
+  m_SwingAxis: {x: 0, y: 0, z: 1}
+  m_TwistLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowTwistLimit:
+    limit: -20
+    bounciness: 0
+    contactDistance: 0
+  m_HighTwistLimit:
+    limit: 70
+    bounciness: 0
+    contactDistance: 0
+  m_SwingLimitSpring:
+    spring: 0
+    damper: 0
+  m_Swing1Limit:
+    limit: 30
+    bounciness: 0
+    contactDistance: 0
+  m_Swing2Limit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_EnableProjection: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 0
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!136 &1121529567
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121529563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.108810484
+  m_Height: 0.3627016
+  m_Direction: 0
+  m_Center: {x: -0.1813508, y: 0, z: 0}
+--- !u!1001 &1123860994
+PrefabInstance:
+  m_ObjectHideFlags: 0
 >>>>>>> parent of 49ecfac... Working on doctor AI
   serializedVersion: 2
   m_Modification:
@@ -16770,8 +17032,19 @@ PrefabInstance:
       value: 13.097001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 95da3c08154f05447b2280ef8d8132c4, type: 3}
 --- !u!4 &1097346043 stripped
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 968af719e82784949bdac8e0ad5bfca6, type: 3}
+--- !u!4 &1221658370 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4345199469445452, guid: 968af719e82784949bdac8e0ad5bfca6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1221658369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1222774947 stripped
+>>>>>>> parent of 49ecfac... Working on doctor AI
 Transform:
   m_CorrespondingSourceObject: {fileID: 4923576351817812, guid: 95da3c08154f05447b2280ef8d8132c4,
     type: 3}
@@ -17064,6 +17337,12 @@ Transform:
 <<<<<<< HEAD
 --- !u!1001 &1123860994
 =======
+--- !u!1 &1241680796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2951819253140801315, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
+    type: 3}
+  m_PrefabInstance: {fileID: 986165650}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1241680796 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2951819253140801315, guid: 8f9730d2ac4963d45ba0099b4a9ffdef,
@@ -19005,12 +19284,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1250663852}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &1256840764
 =======
   m_CorrespondingSourceObject: {fileID: 4857844852929660, guid: e32bcac6fec4bc0458d67bae457e71f6,
     type: 3}
   m_PrefabInstance: {fileID: 1410867116}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 49ecfac... Working on doctor AI
 --- !u!1001 &1423245301
 >>>>>>> parent of 49ecfac... Working on doctor AI
 PrefabInstance:
@@ -26179,6 +26461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1734136640
 GameObject:
   m_ObjectHideFlags: 0
@@ -26220,6 +26503,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1737577743
 =======
+=======
+>>>>>>> parent of 49ecfac... Working on doctor AI
 =======
 >>>>>>> parent of 49ecfac... Working on doctor AI
 --- !u!1001 &1866726239
@@ -29581,6 +29866,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 121.80601
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4923576351817812, guid: 95da3c08154f05447b2280ef8d8132c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -9.974001
@@ -29603,10 +29889,22 @@ Transform:
   m_SourcePrefab: {fileID: 100100000, guid: 8e32ae9339344404da059b851f53499e, type: 3}
 --- !u!1001 &2065663743
 >>>>>>> parent of 49ecfac... Working on doctor AI
+=======
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 583f0e949db074947a69915c38991b5a, type: 3}
+--- !u!4 &2146606834 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4592284382654208, guid: 583f0e949db074947a69915c38991b5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2146606833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3288100019487593374
+>>>>>>> parent of 49ecfac... Working on doctor AI
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 1461186222}
     m_Modifications:
     - target: {fileID: 1399335209622144, guid: 968af719e82784949bdac8e0ad5bfca6, type: 3}
@@ -29682,10 +29980,93 @@ Transform:
   m_PrefabInstance: {fileID: 2049954333}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2051381547
+=======
+    m_TransformParent: {fileID: 1734136641}
+    m_Modifications:
+    - target: {fileID: 2980211102880670075, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 686125719}
+    - target: {fileID: 2980211102880670075, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 686125721}
+    - target: {fileID: 4606330035000903545, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_Name
+      value: PoliceOfficer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035000903545, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_TagString
+      value: Police
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.84694
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.20493238
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.376637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 28ecaa1b01caf92428065e54d9f88348, type: 3}
+--- !u!1001 &4196036526246663566
+>>>>>>> parent of 49ecfac... Working on doctor AI
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 1461186222}
     m_Modifications:
     - target: {fileID: 1399335209622144, guid: 968af719e82784949bdac8e0ad5bfca6, type: 3}
@@ -29840,6 +30221,11 @@ Transform:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4606330035001269017, guid: 28ecaa1b01caf92428065e54d9f88348,
+=======
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4194150342959857452, guid: d0d81e661c54774478a840b7b4294730,
+>>>>>>> parent of 49ecfac... Working on doctor AI
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
@@ -29867,6 +30253,7 @@ PrefabInstance:
     - target: {fileID: 4194150342959857452, guid: d0d81e661c54774478a840b7b4294730,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
 <<<<<<< HEAD
       value: -16.376637
       objectReference: {fileID: 0}
@@ -30101,6 +30488,9 @@ PrefabInstance:
 =======
       value: 1.78
 >>>>>>> parent of 49ecfac... Working on doctor AI
+=======
+      value: 1.78
+>>>>>>> parent of 49ecfac... Working on doctor AI
       objectReference: {fileID: 0}
     - target: {fileID: 4345199469445452, guid: 968af719e82784949bdac8e0ad5bfca6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -30140,6 +30530,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 16.411001
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4345199469445452, guid: 968af719e82784949bdac8e0ad5bfca6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -3.3230002
@@ -31189,6 +31580,10 @@ PrefabInstance:
 <<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 6027f8b5dc69078448d68d4e75a097e0, type: 3}
 =======
+  m_SourcePrefab: {fileID: 100100000, guid: d0d81e661c54774478a840b7b4294730, type: 3}
+>>>>>>> parent of 49ecfac... Working on doctor AI
+=======
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0d81e661c54774478a840b7b4294730, type: 3}
 >>>>>>> parent of 49ecfac... Working on doctor AI
 =======
