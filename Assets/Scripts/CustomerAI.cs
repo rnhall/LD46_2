@@ -17,6 +17,8 @@ public class CustomerAI : MonoBehaviour
     public int roamTimerConst = 100;
     public int roamTimer;
 
+    public bool isRagdoll;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,11 +63,6 @@ public class CustomerAI : MonoBehaviour
                 character.Move(Vector3.zero, false, false);
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            MakeRagdoll();
-        }
     }
 
     void SetKinematic(bool newValue)
@@ -106,8 +103,7 @@ public class CustomerAI : MonoBehaviour
         animator.enabled = false;
         SetKinematic(false);
         rootrb.isKinematic = true;
+        isRagdoll = true;
     }
-
-
 }
 
