@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1578616786797858081}
   m_Layer: 0
   m_Name: bip Neck
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8590783172985525124}
   m_Layer: 0
   m_Name: bip Pelvis
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 1578616786797858085}
   m_Layer: 0
   m_Name: bip L Toe0
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 8590783174167488850}
   m_Layer: 0
   m_Name: bip L UpperArm
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,7 +200,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2826611, y: -0.00044761994, z: 0.18601185}
+  m_ConnectedAnchor: {x: -0.2826609, y: -0.0004474204, z: 0.18601173}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 1578616786797858089}
   m_Layer: 0
   m_Name: bip L Hand
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 8590783173920891043}
   m_Layer: 0
   m_Name: bip L Thigh
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,7 +341,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000005960439, y: 0.00000032782555, z: 0.104099475}
+  m_ConnectedAnchor: {x: 0.0000000596047, y: 0.00000008940697, z: 0.1040993}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 1578616786797858093}
   m_Layer: 0
   m_Name: bip L Foot
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 8590783173317897768}
   m_Layer: 0
   m_Name: bip L Forearm
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -481,7 +481,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.26536074, y: 0.00000016670676, z: 0.00000016717242}
+  m_ConnectedAnchor: {x: -0.26536092, y: 0.000000043772165, z: 0.00000019639268}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 1578616786797858097}
   m_Layer: 0
   m_Name: bip L Finger1
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 1578616786797858099}
   m_Layer: 0
   m_Name: bip L Finger11
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 1578616786797858101}
   m_Layer: 0
   m_Name: bip L Finger0
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -619,7 +619,7 @@ GameObject:
   - component: {fileID: 1578616786797858103}
   m_Layer: 0
   m_Name: bip L Finger01
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 8590783174061018934}
   m_Layer: 0
   m_Name: bip L Calf
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -715,7 +715,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.3929407, y: 0.0000001490116, z: -0.0000000074505797}
+  m_ConnectedAnchor: {x: -0.3929407, y: -0.000000027939674, z: -0.0000000372529}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 1578616786797858107}
   m_Layer: 0
   m_Name: bip L Clavicle
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 1578616786797858109}
   m_Layer: 0
   m_Name: bip
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 8590783174022998168}
   m_Layer: 0
   m_Name: bip Head
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -884,7 +884,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.3679667, y: 0.061193503, z: 0.0000001808228}
+  m_ConnectedAnchor: {x: -0.36796668, y: 0.061193373, z: 0.00000018082227}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -929,7 +929,7 @@ GameObject:
   - component: {fileID: 1578616786797858173}
   m_Layer: 0
   m_Name: rig_CharRoot
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1098,6 +1098,7 @@ MonoBehaviour:
   roamRadius: 10
   roamTimerConst: 200
   roamTimer: 0
+  isRagdoll: 0
 --- !u!1 &1578616786797564259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1221,7 @@ GameObject:
   - component: {fileID: 1578616786797858053}
   m_Layer: 0
   m_Name: bip Spine
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1254,7 +1255,7 @@ GameObject:
   - component: {fileID: 8590783172634521356}
   m_Layer: 0
   m_Name: bip Spine1
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1316,7 +1317,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2899004, y: 0.02141377, z: 0.00000032782555}
+  m_ConnectedAnchor: {x: -0.2899004, y: 0.021413531, z: 0.00000032782555}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1361,7 +1362,7 @@ GameObject:
   - component: {fileID: 1578616786797858057}
   m_Layer: 0
   m_Name: bip R Toe0
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1395,7 +1396,7 @@ GameObject:
   - component: {fileID: 8590783173975325249}
   m_Layer: 0
   m_Name: bip R UpperArm
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1456,7 +1457,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.28266084, y: -0.00044603623, z: -0.18601191}
+  m_ConnectedAnchor: {x: -0.28266072, y: -0.00044618105, z: -0.18601191}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
@@ -1501,7 +1502,7 @@ GameObject:
   - component: {fileID: 1578616786797858061}
   m_Layer: 0
   m_Name: bip R Hand
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1536,7 +1537,7 @@ GameObject:
   - component: {fileID: 8590783173684894211}
   m_Layer: 0
   m_Name: bip R Thigh
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1597,7 +1598,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000041723231, y: -0.00000028312206, z: -0.104099475}
+  m_ConnectedAnchor: {x: -0.00000041723254, y: -0.00000010430813, z: -0.1040993}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1642,7 +1643,7 @@ GameObject:
   - component: {fileID: 1578616786797858065}
   m_Layer: 0
   m_Name: bip R Foot
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1676,7 +1677,7 @@ GameObject:
   - component: {fileID: 8590783173990701764}
   m_Layer: 0
   m_Name: bip R Forearm
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1737,7 +1738,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.26536098, y: 0.00000021420419, z: -0.0000003190944}
+  m_ConnectedAnchor: {x: -0.265361, y: -0.000000033527613, z: -0.0000002392335}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -1782,7 +1783,7 @@ GameObject:
   - component: {fileID: 1578616786797858069}
   m_Layer: 0
   m_Name: bip R Finger1
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1813,7 +1814,7 @@ GameObject:
   - component: {fileID: 1578616786797858071}
   m_Layer: 0
   m_Name: bip R Finger11
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1844,7 +1845,7 @@ GameObject:
   - component: {fileID: 1578616786797858073}
   m_Layer: 0
   m_Name: bip R Finger0
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1875,7 +1876,7 @@ GameObject:
   - component: {fileID: 1578616786797858075}
   m_Layer: 0
   m_Name: bip R Finger01
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1909,7 +1910,7 @@ GameObject:
   - component: {fileID: 8590783172443166049}
   m_Layer: 0
   m_Name: bip R Calf
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1970,7 +1971,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.3929408, y: 0.00000028545037, z: 0.0000000372529}
+  m_ConnectedAnchor: {x: -0.39294076, y: -0.00000006845221, z: 0.00000008940695}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -2015,7 +2016,7 @@ GameObject:
   - component: {fileID: 1578616786797858079}
   m_Layer: 0
   m_Name: bip R Clavicle
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
