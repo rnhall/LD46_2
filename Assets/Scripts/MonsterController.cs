@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class MonsterController : MonoBehaviour
 {
     public Animator monsterAnim;
-    private AudioSource monsteraudioSource;
-    public AudioClip monsterAudio;
+    public AudioSource monsteraudioSource;
+    //public AudioClip monsterAudio;
+    //public AudioSource monsteraudioSource;
+    public AudioClip feedMeClip;
     public bool FeedMe = false;
     public bool Omnomnom = false;
     public float feedtimeT = 0;
@@ -19,8 +21,9 @@ public class MonsterController : MonoBehaviour
     {
         numFed = 0;
         monsterAnim = gameObject.GetComponent<Animator>();
-        monsteraudioSource = gameObject.GetComponent<AudioSource>();
-        monsterAudio = gameObject.GetComponent<AudioClip>();
+
+        //monsteraudioSource = gameObject.GetComponent<AudioSource>();
+        //monsterAudio = gameObject.GetComponent<AudioClip>();
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class MonsterController : MonoBehaviour
         if (feedtimeT > 10)
         {
             monsterAnim.Play("FeedMe");
+            monsteraudioSource.clip = feedMeClip;
             monsteraudioSource.Play();
             feedtimeT = 0;
         }
