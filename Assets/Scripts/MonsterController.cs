@@ -8,7 +8,6 @@ public class MonsterController : MonoBehaviour
     public Animator monsterAnim;
     public AudioSource monsteraudioSource;
     public AudioClip feedMeClip;
-    //public AudioClip monsterAudio;
     public bool FeedMe = false;
     public bool Omnomnom = false;
     public float feedtimeT = 0;
@@ -34,7 +33,7 @@ public class MonsterController : MonoBehaviour
             monsteraudioSource.Play();
             feedtimeT = 0;
         }
-        if(numFed == 3)
+        if(numFed >= 3)
         {
             SceneManager.LoadScene(2);
         }

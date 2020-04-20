@@ -1147,7 +1147,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-95970
+  m_Name: pb_Mesh-269038
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2070,7 +2070,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-95982
+  m_Name: pb_Mesh-269060
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7210,7 +7210,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-96006
+  m_Name: pb_Mesh-269032
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13458,7 +13458,22 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 686125719}
+      objectReference: {fileID: 686125720}
+    - target: {fileID: 2195967142187403350, guid: 96cf6d0d0e79fb4478835357302f5e31,
+        type: 3}
+      propertyPath: monsteraudioSource
+      value: 
+      objectReference: {fileID: 1614415779}
+    - target: {fileID: 2195967142187403350, guid: 96cf6d0d0e79fb4478835357302f5e31,
+        type: 3}
+      propertyPath: monsterAnim
+      value: 
+      objectReference: {fileID: 1614415776}
+    - target: {fileID: 2195967142187403350, guid: 96cf6d0d0e79fb4478835357302f5e31,
+        type: 3}
+      propertyPath: feedMeClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a8fb94cbbc0ea564bb2f0ee895819d2a, type: 3}
     - target: {fileID: 2391537797533465108, guid: 96cf6d0d0e79fb4478835357302f5e31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16236,7 +16251,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-95994
+  m_Name: pb_Mesh-269066
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21750,6 +21765,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1047739942}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1614415776 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3066081566848339564, guid: 96cf6d0d0e79fb4478835357302f5e31,
+    type: 3}
+  m_PrefabInstance: {fileID: 1047739942}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1614415779
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21760,7 +21781,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a8fb94cbbc0ea564bb2f0ee895819d2a, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
