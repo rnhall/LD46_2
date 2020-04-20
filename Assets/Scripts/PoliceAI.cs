@@ -150,18 +150,18 @@ public class PoliceAI : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && alerted)
         {
-            audioSource.clip = sirenClip;
-            audioSource.Play();
+            //audioSource.clip = stopRightThere;
+            //audioSource.Play();
             StartCoroutine(Example());
-            SceneManager.LoadScene(3);
         }
     }
 
     IEnumerator Example()
     {
-        print(Time.time);
-        yield return new WaitForSecondsRealtime(5);
-        print(Time.time);
+        audioSource.clip = stopRightThere;
+        audioSource.Play();
+        yield return new WaitForSecondsRealtime(6);
+        SceneManager.LoadScene(3);
     }
 }
 

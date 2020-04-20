@@ -914,7 +914,7 @@ GameObject:
   - component: {fileID: 1282835455076776325}
   m_Layer: 0
   m_Name: PoliceOfficer
-  m_TagString: Untagged
+  m_TagString: Police
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1045,7 +1045,7 @@ MonoBehaviour:
   animator: {fileID: 4606330035008206023}
   rootrb: {fileID: 4606330035000903424}
   linecastPoint: {fileID: 4606330035001269031}
-  roaming: 0
+  roaming: 1
   roamRadius: 10
   roamTimerConst: 200
   roamTimer: 0
@@ -1055,6 +1055,7 @@ MonoBehaviour:
   alertMax: 1000
   audioSource: {fileID: 1282835455076776325}
   sirenClip: {fileID: 8300000, guid: c73ea82e1c5ce0f409c7d60ed9de26f3, type: 3}
+  stopRightThere: {fileID: 8300000, guid: 33a16d8a19b8e0b4797c27e277e02bba, type: 3}
 --- !u!82 &1282835455076776325
 AudioSource:
   m_ObjectHideFlags: 0
