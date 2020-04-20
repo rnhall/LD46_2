@@ -7,7 +7,6 @@ using UnityStandardAssets.Characters.ThirdPerson;
 public class PoliceAI : MonoBehaviour
 {
     public GameObject player;
-    public PlayerController playerController;
 
     public NavMeshAgent agent;
     public ThirdPersonCharacter character;
@@ -19,29 +18,18 @@ public class PoliceAI : MonoBehaviour
     public int roamTimerConst = 100;
     public int roamTimer;
 
-    public bool attacked;
-
-    public bool alerted;
-    public int alertTimer;
-    public int alertMax = 1000;
-
-    public AudioSource audioSource;
-    public AudioClip sirenClip;
-
     // Start is called before the first frame update
     void Start()
     {
         roamTimer = 0;
         SetKinematic(true);
         agent.updateRotation = false;
-        alerted = false;
-        alertTimer = alertMax;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        //Manages idle roaming state.
+
         if (roaming && agent.enabled)
         {
             if (roamTimer <= 0)
@@ -65,40 +53,9 @@ public class PoliceAI : MonoBehaviour
             }
         }
 
-        //Handles the alerted status if an officer sees you dragging a body.
-        if ((PlayerInSight() && playerController.isDragging) || PlayerInSight() && playerController.attacked)
+        if (PlayerInSight())
         {
-            agent.SetDestination(player.transform.position);
-            agent.speed = 4.0f;
-            character.Move(agent.desiredVelocity, false, false);
-            if (alerted == false)
-            {
-                audioSource.clip = sirenClip;
-                audioSource.Play();
-            }
-            alerted = true;
-        } else
-        {
-            agent.speed = 1.25f;
-        }
-
-        if (alerted && alertTimer > 0)
-        {
-            agent.SetDestination(player.transform.position);
-            audioSource.volume = (float)alertTimer / alertMax;
-            alertTimer -= 1;
-        } else
-        {
-            audioSource.Stop();
-            alerted = false;
-            alertTimer = alertMax;
-        }
-
-        //Handles being attacked
-        if (attacked)
-        {
-            //TO IMPLEMENT//
-            Debug.Log("GAME OVER!");
+            Debug.Log("Spotted!");
         }
     }
 
@@ -111,6 +68,10 @@ public class PoliceAI : MonoBehaviour
         foreach (Rigidbody rb in bodies)
         {
             rb.isKinematic = newValue;
+            //rb.velocity = Vector3.zero;
+            //rb.angularVelocity = Vector3.zero;
+            //rb.drag = 1;
+            //rb.angularDrag = 1;
         }
     }
 
@@ -141,17 +102,7 @@ public class PoliceAI : MonoBehaviour
         }
         return false;
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player" && alerted)
-        {
-            //TO IMPLEMENT//
-            Debug.Log("You were arrested!");
-        }
-    }
 }
-
 
 
 
