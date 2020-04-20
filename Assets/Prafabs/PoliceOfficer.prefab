@@ -1040,11 +1040,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   playerController: {fileID: 0}
-  agent: {fileID: 0}
-  character: {fileID: 0}
-  animator: {fileID: 0}
-  rootrb: {fileID: 0}
-  roaming: 1
+  agent: {fileID: 4606330035000903426}
+  character: {fileID: 4606330035000903428}
+  animator: {fileID: 4606330035008206023}
+  rootrb: {fileID: 4606330035000903424}
+  linecastPoint: {fileID: 4606330035001269031}
+  roaming: 0
   roamRadius: 10
   roamTimerConst: 200
   roamTimer: 0
