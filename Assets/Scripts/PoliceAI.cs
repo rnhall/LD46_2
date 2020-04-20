@@ -152,6 +152,7 @@ public class PoliceAI : MonoBehaviour
         {
             //audioSource.clip = stopRightThere;
             //audioSource.Play();
+            playerController.controller.enabled = false;
             StartCoroutine(Example());
         }
     }
