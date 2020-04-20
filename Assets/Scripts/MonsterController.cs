@@ -7,11 +7,6 @@ public class MonsterController : MonoBehaviour
 {
     public Animator monsterAnim;
     public AudioSource monsteraudioSource;
-<<<<<<< HEAD
-    //public AudioClip monsterAudio;
-    //public AudioSource monsteraudioSource;
-=======
->>>>>>> 04e1d3d8487f30432ba19146ff1a24c574663166
     public AudioClip feedMeClip;
     public bool FeedMe = false;
     public bool Omnomnom = false;
@@ -24,9 +19,6 @@ public class MonsterController : MonoBehaviour
     {
         numFed = 0;
         monsterAnim = gameObject.GetComponent<Animator>();
-
-        //monsteraudioSource = gameObject.GetComponent<AudioSource>();
-        //monsterAudio = gameObject.GetComponent<AudioClip>();
     }
 
     // Update is called once per frame
