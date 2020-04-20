@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 2195967142187403350}
   - component: {fileID: 3953274096964706402}
   m_Layer: 0
-  m_Name: Monster 1
+  m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -374,7 +374,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2391537797533465109}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.6
   m_Height: 2

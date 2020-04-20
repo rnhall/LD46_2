@@ -33,8 +33,11 @@ public class PlayerController : MonoBehaviour
         //Move more slowly if you're dragging a body.
         if (isDragging)
         {
-            controller.walkSpeed = 1.5f;
-            controller.sprintSpeed = 1.5f;
+            //controller.walkSpeed = 1.5f;
+            //controller.sprintSpeed = 1.5f;
+
+            controller.walkSpeed = 4f;
+            controller.sprintSpeed = 8f;
         } else
         {
             controller.walkSpeed = 4f;
