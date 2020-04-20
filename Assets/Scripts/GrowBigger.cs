@@ -15,6 +15,7 @@ public class GrowBigger : MonoBehaviour
         {
             recentlyFed = true;
             Destroy(collider.transform.root.gameObject);
+            Destroy(GameObject.Find("Rigidbody dragger"));
         }
     }
 
