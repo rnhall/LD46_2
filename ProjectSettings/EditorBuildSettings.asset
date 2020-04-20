@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FeedMe_Animation.unity
     guid: cdf1b8beb85221e4cbe304999c8fc742
+  - enabled: 1
+    path: Assets/Scenes/Success.unity
+    guid: 4430119e1217ee4438994b86f332043a
+  - enabled: 1
+    path: Assets/Scenes/GameOver 1.unity
+    guid: a3fdd0519f0732941a162453013b0a82
   m_configObjects: {}

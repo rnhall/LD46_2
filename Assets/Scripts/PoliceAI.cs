@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
+using UnityEngine.SceneManagement;
 
 public class PoliceAI : MonoBehaviour
 {
@@ -98,8 +99,7 @@ public class PoliceAI : MonoBehaviour
         //Handles being attacked
         if (attacked)
         {
-            //TO IMPLEMENT//
-            Debug.Log("GAME OVER!");
+            SceneManager.LoadScene(3);
         }
     }
 
@@ -149,8 +149,7 @@ public class PoliceAI : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && alerted)
         {
-            //TO IMPLEMENT//
-            Debug.Log("You were arrested!");
+            SceneManager.LoadScene(3);
         }
     }
 }

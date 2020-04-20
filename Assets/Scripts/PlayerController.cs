@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
         //Are we dragging a body?
         isDragging = drag.isDragging;
 
+        if (GameObject.Find("Rigidbody dragger") == null) isDragging = false;
+
 
         //Move more slowly if you're dragging a body.
         if (isDragging)
