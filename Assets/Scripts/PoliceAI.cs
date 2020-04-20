@@ -13,6 +13,7 @@ public class PoliceAI : MonoBehaviour
     public ThirdPersonCharacter character;
     public Animator animator;
     public Rigidbody rootrb;
+    public Transform linecastPoint;
 
     public bool roaming;
     public int roamRadius;
@@ -132,10 +133,12 @@ public class PoliceAI : MonoBehaviour
         RaycastHit hit;
         if (Physics.Linecast(this.transform.position, player.transform.position, out hit))
         {
-            float angle = Vector3.Dot(agent.transform.forward, agent.transform.position - player.transform.position);
-            if (hit.collider.gameObject.layer != 9 && angle < 0)
+            float angle = Vector3.Dot(agent.transform.forward, linecastPoint.position - player.transform.position);
+            Debug.Log(angle);
+            if (hit.collider.gameObject.tag == "Player" && angle < 0)
             {
-                Debug.DrawLine(agent.transform.position, player.transform.position, Color.black);
+                Debug.Log(hit.collider.gameObject.layer);
+                Debug.DrawLine(linecastPoint.position, player.transform.position, Color.black);
                 return true;
             }
         }
