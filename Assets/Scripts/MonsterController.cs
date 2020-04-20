@@ -7,14 +7,12 @@ public class MonsterController : MonoBehaviour
 {
     public Animator monsterAnim;
     private AudioSource monsteraudioSource;
-    private AudioClip monsterhitClip;
-    //public AudioClip monsterAudio;
+    public AudioClip monsterAudio;
     public bool FeedMe = false;
     public bool Omnomnom = false;
     public float feedtimeT = 0;
     public PlayerController player;
     public int numFed;
-    //public float feedtimeT = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +20,7 @@ public class MonsterController : MonoBehaviour
         numFed = 0;
         monsterAnim = gameObject.GetComponent<Animator>();
         monsteraudioSource = gameObject.GetComponent<AudioSource>();
+        monsterAudio = gameObject.GetComponent<AudioClip>();
     }
 
     // Update is called once per frame
@@ -47,7 +46,6 @@ public class MonsterController : MonoBehaviour
             player.isDragging = false;
             player.GetComponent<PlayerController>().isDragging = false;
             monsterAnim.Play("Omnomnom");  
-            monsterAnim.Play("Omnomnom");
             numFed += 1;
         }
     }
