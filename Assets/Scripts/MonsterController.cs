@@ -7,6 +7,7 @@ public class MonsterController : MonoBehaviour
     public Animator monsterAnim;
     public bool FeedMe = false;
     public bool Omnomnom = false;
+    public GameObject player;
     //public float feedtimeT = 0;
 
     // Start is called before the first frame update
@@ -26,6 +27,7 @@ public class MonsterController : MonoBehaviour
         if (collider.gameObject.tag == "Food")
         {
             //Omnomnom = true;
+            player.GetComponent<PlayerController>().isDragging = false;
             monsterAnim.Play("Omnomnom");
             //monsterAnim.Play("Omnomnom");    
         }
