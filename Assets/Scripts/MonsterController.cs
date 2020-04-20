@@ -33,7 +33,7 @@ public class MonsterController : MonoBehaviour
         if (collider.gameObject.tag == "Food")
         {
             //Omnomnom = true;
-            player.GetComponent<PlayerController>().isDragging = false;
+            player.isDragging = false;
             monsterAnim.Play("Omnomnom");
             numFed += 1;
             //monsterAnim.Play("Omnomnom");    

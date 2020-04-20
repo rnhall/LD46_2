@@ -29,6 +29,7 @@ public class PoliceAI : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip sirenClip;
+    public AudioClip stopRightThere;
 
     // Start is called before the first frame update
     void Start()
@@ -149,8 +150,18 @@ public class PoliceAI : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && alerted)
         {
+            audioSource.clip = sirenClip;
+            audioSource.Play();
+            StartCoroutine(Example());
             SceneManager.LoadScene(3);
         }
+    }
+
+    IEnumerator Example()
+    {
+        print(Time.time);
+        yield return new WaitForSecondsRealtime(5);
+        print(Time.time);
     }
 }
 
